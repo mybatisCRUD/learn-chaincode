@@ -21,7 +21,7 @@ import (
 	"fmt"
 
 	"github.com/hyperledger/fabric/core/chaincode/shim"
-	"github.com/swbsin/golangFile"
+	"https://github.com/swbsin/golangFile"
 )
 
 // SimpleChaincode example simple Chaincode implementation
