@@ -21,6 +21,7 @@ import (
 	"fmt"
 
 	"github.com/hyperledger/fabric/core/chaincode/shim"
+	"github.com/swbsin/golangFile"
 )
 
 // SimpleChaincode example simple Chaincode implementation
@@ -87,7 +88,7 @@ func (t *SimpleChaincode) write(stub shim.ChaincodeStubInterface, args []string)
 	}
 
 	key = args[0] //rename for funsies
-	value = args[1]
+	value = args[1]+ wenbin.TestFunc()
 	err = stub.PutState(key, []byte(value)) //write the variable into the chaincode state
 	if err != nil {
 		return nil, err
